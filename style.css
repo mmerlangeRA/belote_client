@@ -1,0 +1,91 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#title {
+    height: 50px;
+    /* Fixed height */
+    background-color: #333;
+    /* Example color */
+    text-align: center;
+    font-size: 1em;
+    line-height: 50px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    height: calc(100% - 50px);
+    position: relative;
+}
+#menu {
+    width: 0px;
+    /* Fixed width for the menu */
+    background-color: #f2f2f2;
+    /* Example color */
+}
+
+#container3D {
+    flex: 1;
+    max-height: 100%;
+}
+
+
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 0.5s;
+}
+
+.player1{
+    top:10px;
+    left:30%;
+}
+
+.player2 {
+    top: 30%;
+    right: 10px;
+}
+
+.player3 {
+    bottom: 10px;
+    left: 30%;
+}
+
+.player4 {
+    top: 30%;
+    left: 10px;
+}
+
+.activePlayer{
+        box-shadow: 2px 1px 1px black;
+        transform:scale(1.1)
+}
+
+#startGame{
+    position: absolute;
+    z-index: 1;
+}
+
+.team1{
+    border: 1px solid red;
+}
+
+.team2 {
+    border: 1px solid blue;
+}
